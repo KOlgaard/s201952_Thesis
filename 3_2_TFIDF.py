@@ -23,7 +23,7 @@ project_dir = './'
 
 #%% Convert dataframes to text
 for filename in os.listdir(project_dir):
-    if filename.endswith('all_data_wValence.pkl'):
+    if filename.endswith('all_data_preprocessed.pkl'):
         print(filename)
         with open(project_dir + filename, "rb") as input_file:
             df = pickle.load(input_file)
